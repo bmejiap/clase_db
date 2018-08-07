@@ -3926,19 +3926,6 @@ insert  into `productlines`(`productLine`,`textDescription`,`htmlDescription`,`i
 ('Trucks and Buses','The Truck and Bus models are realistic replicas of buses and specialized trucks produced from the early 1920s to present. The models range in size from 1:12 to 1:50 scale and include numerous limited edition and several out-of-production vehicles. Materials used include tin, diecast and plastic. All models include a certificate of authenticity from their manufacturers and are a perfect ornament for the home and office.',NULL,NULL),
 ('Vintage Cars','Our Vintage Car models realistically portray automobiles produced from the early 1900s through the 1940s. Materials used include Bakelite, diecast, plastic and wood. Most of the replicas are in the 1:18 and 1:24 scale sizes, which provide the optimum in detail and accuracy. Prices range from $30.00 up to $180.00 for some special limited edition replicas. All models include a certificate of authenticity from their manufacturers and come fully assembled and ready for display in the home or office.',NULL,NULL);
 
-DROP TABL IF EXISTS `diabetes`;
-
-CREATE TABLE `diabetes` (
-    `id_paciente` int(10) NOT NULL,
-    `nombre` varchar(15) NOT NULL,
-    `edad`   int(3) NOT NULL,
-    `Toma`   varchar(15) NOT NULL,
-    `Edo_Toma` varchar(25), NOT NULL,
-    `glucosa` int(4), NOT NULL,
-    PRIMARY KEY (`id_paciente`)
-)   ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-
 /*Table structure for table `products` */
 
 DROP TABLE IF EXISTS `products`;
